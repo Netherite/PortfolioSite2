@@ -1,0 +1,344 @@
+/* media screen sizes: 320, 600 */
+
+
+@font-face {
+    font-family: 'PPEditorialOld';
+    src: url("/Assets/fonts/pp-editorial_otf/PPEditorialOld-Regular.otf") format("opentype");
+
+}
+
+:root {
+    --padding-small: 20px; 
+    --padding-large: 60px; 
+    --pink: #EE5DA1; 
+    --background-color: beige; 
+}
+
+body, ul {
+    padding: 0; 
+    margin: 0; 
+}
+
+section { 
+    margin: 0;
+}
+
+
+.header-content{
+    padding: var(--padding-small);
+}
+
+section {
+    padding: var(--padding-small);
+}
+
+@media screen and (min-width: 1000px){
+    section {
+        padding-top: var(--padding-large);
+    }
+}
+
+
+
+
+
+/* TEXT STYLES */
+
+p, a, span {
+    font-family:  "aktiv-grotesk", sans-serif;
+    font-size: 1rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+a {
+    color: black; 
+    text-decoration: none;
+}
+
+.large-link {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    /*transform: translateY(-50px);
+    transition: transform .5s; 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+}
+
+.h2-wrapper > h2 {
+    font-size: clamp(1rem, 17vw, 12rem); 
+    color: var(--pink); 
+    width: 100%; 
+}
+
+@media screen and (min-width: 400px){
+    .h2-wrapper > h2 {
+        font-size: clamp(1rem, 17.6vw, 12rem); 
+        color: var(--pink); 
+        width: 100%; 
+    }
+}
+
+@media screen and (min-width: 720px){
+    .h2-wrapper > h2 {
+        font-size: clamp(1rem, 18vw, 12rem); 
+        color: var(--pink); 
+        width: 100%; 
+    }
+}
+
+
+.h2-wrapper {
+    max-width: 1000px;
+    margin: auto;
+    width: 100%; 
+
+}
+ 
+h2 {
+    font-family:  "PPEditorialOld", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+
+h3 {
+    font-family:  "PPEditorialOld", sans-serif;
+    font-size: 2rem; 
+    font-weight: 200;
+    font-style: normal; 
+    line-height: 2rem;
+    margin: 0;
+    padding-top: .7rem;
+    padding-bottom: 5px; 
+    max-width: 1000px;
+
+}
+
+span {
+    color: rgba(0, 0, 0, 0.621);
+}
+
+.header-paragraph {
+    color: white; 
+    font-size: 1rem;
+
+}
+
+
+/************** Header ******************************************/ 
+
+
+/************* main nav bar ************/ 
+
+/* universal nav styling */ 
+.nav-links {
+    list-style: none;
+}
+
+.nav-links {
+    list-style: none;
+  }
+  
+  .nav-links {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  
+  ul li a, ul button {
+    font-size: 2rem;
+    color: white; 
+  
+  }
+
+  /******* collapsable menu ******/
+  
+  .logo {
+    position: relative;
+    z-index: 1; /* Place the logo below the menu */
+}
+
+
+/* horizontal bar styling */ 
+
+
+@media screen and (min-width: 600px){
+    nav {
+        display: flex;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+}  
+
+
+/*navbar padding styling */
+@media screen and (min-width:320px){
+    .navbar {
+        padding: 0px; 
+    }
+}
+
+nav {
+    padding: 0px; 
+}
+
+@media screen and (min-width:600px){
+    .navbar {
+        padding: 10px 20px; 
+    }
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+    
+
+/* nav bar spacing */ 
+@media screen and (min-width: 320px){ 
+    .navbar .nav-links a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 0px;
+    }
+}
+
+.nav-links {
+    padding: 0px; 
+}
+
+@media screen and (min-width: 600px){ 
+    .navbar .nav-links a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+ 
+li {
+    list-style: none;
+}
+
+.navbar .contact-btn {
+    background-color: #007BFF;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.navbar .contact-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/*********** Hero Section ***********/
+
+.centered-image-wrapper {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-section {
+    background-image: url("/Assets/Landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Logo image */ 
+
+@media screen and (min-width: 320px){
+    #logo-img {
+        width: 100%;
+        padding-top: 30px; 
+    }
+}
+
+#logo-img {
+    max-width: 1000px;
+
+}
+
+
+/******* Portfolio section *******/ 
+#portfolio {
+    background-color: var(--background-color);
+    
+}
+
+.portfolio-piece {
+    margin-top: px;
+    padding-bottom: 4rem;
+    max-width: 1300px;
+    margin: auto; 
+}
+
+@media screen and (min-width: 1000px) {
+    .portfolio-piece{
+    }
+
+}
+
+
+.portfolio-piece > p {
+    padding-top: .7rem; 
+}
+
+
+@media screen and (min-width: 800px){
+    .portfolio-description-wrapper {
+        padding-top: 30px;
+        display: flex; 
+        flex-direction: horizontal;
+        gap: 40px; 
+    }
+
+    .portfolio-description-heading-wrapper {
+        width: 40%; 
+    }
+
+    .portfolio-details-wrapper {
+        width: 60%; 
+    }
+   
+}
+
+
+/********* Footer **********/ 
+
+footer {
+    background-color: var(--pink);
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-small); 
+
+}
+
+
+
+
+
