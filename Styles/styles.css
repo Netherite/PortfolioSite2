@@ -8,10 +8,12 @@
 }
 
 :root {
+    --max-width: 1300px; 
     --padding-small: 20px; 
     --padding-large: 60px; 
     --pink: #EE5DA1; 
-    --background-color: beige; 
+    --light-green: #DDF9D1; 
+    --background-color: rgb(242, 242, 242); 
 }
 
 body, ul {
@@ -30,6 +32,12 @@ section {
 
 section {
     padding: var(--padding-small);
+}
+
+@media screen and (min-width: 700px){
+    section {
+        padding: var(--padding-large); 
+    }
 }
 
 @media screen and (min-width: 1000px){
@@ -74,16 +82,16 @@ a {
 }
 
 @media screen and (min-width: 400px){
-    .h2-wrapper > h2 {
+    .h2-wrapper > h2 {s
         font-size: clamp(1rem, 17.6vw, 12rem); 
         color: var(--pink); 
         width: 100%; 
     }
 }
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 700px){
     .h2-wrapper > h2 {
-        font-size: clamp(1rem, 18vw, 12rem); 
+        font-size: clamp(1rem, 17vw, 15.4rem); 
         color: var(--pink); 
         width: 100%; 
     }
@@ -91,7 +99,7 @@ a {
 
 
 .h2-wrapper {
-    max-width: 1000px;
+    max-width: var(--max-width);
     margin: auto;
     width: 100%; 
 
@@ -107,17 +115,26 @@ h2 {
 
 }
 
+
+
 h3 {
     font-family:  "PPEditorialOld", sans-serif;
     font-size: 2rem; 
     font-weight: 200;
     font-style: normal; 
-    line-height: 2rem;
+    line-height: 3rem;
     margin: 0;
     padding-top: .7rem;
     padding-bottom: 5px; 
     max-width: 1000px;
 
+}
+
+@media screen and (min-width: 700px) {
+    h3 {
+        font-size: 3rem; 
+        line-height: 3.5rem;
+    }
 }
 
 span {
@@ -280,6 +297,16 @@ li {
 
 }
 
+/******* About me section *******/ 
+#about {
+    background-color: var(--light-green);
+}
+
+#about > h2 {
+    color: var(--pink);
+    font-size: 4rem;
+}
+
 
 /******* Portfolio section *******/ 
 #portfolio {
@@ -290,15 +317,10 @@ li {
 .portfolio-piece {
     margin-top: px;
     padding-bottom: 4rem;
-    max-width: 1300px;
+    max-width: var(--max-width);
     margin: auto; 
 }
 
-@media screen and (min-width: 1000px) {
-    .portfolio-piece{
-    }
-
-}
 
 
 .portfolio-piece > p {
@@ -309,9 +331,11 @@ li {
 @media screen and (min-width: 800px){
     .portfolio-description-wrapper {
         padding-top: 30px;
+        padding-bottom: 50px; 
         display: flex; 
         flex-direction: horizontal;
         gap: 40px; 
+        max-width: 1000px;
     }
 
     .portfolio-description-heading-wrapper {

@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper', {
-  effect: "creative",
+  /*effect: "creative",
   creativeEffect: {
     prev: {
       shadow: true,
@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper', {
     next: {
       translate: ["100%", 0, 0],
     },
-  },
+  }, */
     direction: 'horizontal',
     loop: true,
     speed: 700,
