@@ -7,6 +7,10 @@
 
 }
 
+img {
+    object-fit: cover;
+}
+
 :root {
     --max-width: 1300px; 
     --padding-small: 20px; 
@@ -14,11 +18,16 @@
     --pink: #EE5DA1; 
     --light-green: #DDF9D1; 
     --background-color: rgb(242, 242, 242); 
+    --large-paragraph-font-size: 1.5rem;
+    --regular-paragraph-font-size: 1rem;
+    --h2-large: 5rem;
 }
 
 body, ul {
     padding: 0; 
-    margin: 0; 
+    margin-top: 0; 
+    margin-left: 0; 
+    margin-right: 0; 
 }
 
 section { 
@@ -47,42 +56,65 @@ section {
 }
 
 
+.transform_Y {
+    transform: translateY(100px);
+}
+
+.main-content {
+    background-color: var(--background-color);
+}
+
 
 
 
 /* TEXT STYLES */
 
-p, a, span {
+p, a, span, li{
     font-family:  "aktiv-grotesk", sans-serif;
-    font-size: 1rem;
 }
 
 p {
-    line-height: 1.5rem;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+.large-text {
+    font-size: var(--large-paragraph-font-size);
+}
+
+.portfolio-details-wrapper p {
+    line-height: 2rem;
+    font-size: 1.5rem;
 }
 
 a {
-    color: black; 
     text-decoration: none;
+    color: black;
+}
+
+
+
+ul {
+    list-style-position: inside;
+    line-height: 2rem;
 }
 
 .large-link {
     text-decoration: underline;
     font-size: 1.5rem;
-    line-height: 2rem;
-    /*transform: translateY(-50px);
-    transition: transform .5s; 
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+
 }
 
 .h2-wrapper > h2 {
     font-size: clamp(1rem, 17vw, 12rem); 
     color: var(--pink); 
-    width: 100%; 
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 14rem;
 }
 
 @media screen and (min-width: 400px){
-    .h2-wrapper > h2 {s
+    .h2-wrapper > h2 {
         font-size: clamp(1rem, 17.6vw, 12rem); 
         color: var(--pink); 
         width: 100%; 
@@ -112,6 +144,7 @@ h2 {
     margin: 0;
     text-transform: uppercase;
     line-height: 1;
+    font-size: var(--h2-large);
 
 }
 
@@ -128,6 +161,10 @@ h3 {
     padding-bottom: 5px; 
     max-width: 1000px;
 
+}
+
+h4 {
+    font-size: 1.5rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -151,121 +188,6 @@ span {
 /************** Header ******************************************/ 
 
 
-/************* main nav bar ************/ 
-
-/* universal nav styling */ 
-.nav-links {
-    list-style: none;
-}
-
-.nav-links {
-    list-style: none;
-  }
-  
-  .nav-links {
-    display: flex; 
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-  
-  ul li a, ul button {
-    font-size: 2rem;
-    color: white; 
-  
-  }
-
-  /******* collapsable menu ******/
-  
-  .logo {
-    position: relative;
-    z-index: 1; /* Place the logo below the menu */
-}
-
-
-/* horizontal bar styling */ 
-
-
-@media screen and (min-width: 600px){
-    nav {
-        display: flex;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-    }
-}  
-
-
-/*navbar padding styling */
-@media screen and (min-width:320px){
-    .navbar {
-        padding: 0px; 
-    }
-}
-
-nav {
-    padding: 0px; 
-}
-
-@media screen and (min-width:600px){
-    .navbar {
-        padding: 10px 20px; 
-    }
-}
-
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-
-    
-
-/* nav bar spacing */ 
-@media screen and (min-width: 320px){ 
-    .navbar .nav-links a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        font-size: 1rem;
-        padding: 0px;
-    }
-}
-
-.nav-links {
-    padding: 0px; 
-}
-
-@media screen and (min-width: 600px){ 
-    .navbar .nav-links a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        font-size: 1rem;
-        padding: 5px 10px;
-    }
-}
-
-.navbar .nav-links a:hover {
-    text-decoration: underline;
-}
- 
-li {
-    list-style: none;
-}
-
-.navbar .contact-btn {
-    background-color: #007BFF;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.navbar .contact-btn:hover {
-    background-color: #0056b3;
-}
 
 
 /*********** Hero Section ***********/
@@ -280,8 +202,18 @@ li {
     background-image: url("/Assets/Landscape.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh; 
+    /*
+    background-position: center bottom;
+    animation: zoom 2s forwards; */
 }
 
+/*
+@keyframes zoom {
+    0% {background-size: 100%;}
+    100% {background-size: 102%;}
+  }
+*/
 
 /* Logo image */ 
 
@@ -297,20 +229,10 @@ li {
 
 }
 
-/******* About me section *******/ 
-#about {
-    background-color: var(--light-green);
-}
-
-#about > h2 {
-    color: var(--pink);
-    font-size: 4rem;
-}
 
 
 /******* Portfolio section *******/ 
 #portfolio {
-    background-color: var(--background-color);
     
 }
 
@@ -347,21 +269,6 @@ li {
     }
    
 }
-
-
-/********* Footer **********/ 
-
-footer {
-    background-color: var(--pink);
-}
-
-.footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: var(--padding-small); 
-
-}
-
 
 
 

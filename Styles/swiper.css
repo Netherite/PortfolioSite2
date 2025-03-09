@@ -1,3 +1,6 @@
+import SimpleParallax from "simple-parallax-js/vanilla";
+
+
 body {
     margin: 0; 
     padding: 0; 
@@ -5,7 +8,9 @@ body {
   
   .swiper {
     height: 400px;
+    opacity: 0;
     width: 100%;
+    transition: opacity ease-in-out 1s;
   }
   
   .swiper-wrapper {
@@ -21,7 +26,7 @@ body {
   .swiper-slide {
     text-align: center;
         font-size: 18px;
-        background: #fff;
+        background: #fff; 
         display: flex;
         justify-content: center;
         align-items: center;

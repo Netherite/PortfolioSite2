@@ -1,0 +1,111 @@
+/************* main nav bar ************/ 
+
+/* universal nav styling */ 
+
+.nav-links {
+    list-style: none;
+  }
+  
+  .nav-links {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  
+  ul li a, ul button {
+    font-size: 2rem;
+    color: white; 
+  
+  }
+
+  /******* collapsable menu ******/
+  
+  .logo {
+    position: relative;
+    z-index: 1; /* Place the logo below the menu */
+}
+
+
+/**************************** horizontal bar styling *******************************/ 
+
+
+@media screen and (min-width: 600px){
+
+    .hamburger-menu { /** get rid of hamburger menu */
+        display: none;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px; 
+    }
+
+    ul li a, ul button {
+        font-size: 1.2rem;
+        color: white; 
+      }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 30px; 
+        align-items: center;
+    }
+
+}  
+
+
+/*navbar padding styling */
+@media screen and (min-width:320px){
+    .navbar {
+        padding: 0px; 
+    }
+}
+
+nav {
+    padding: 0px; 
+}
+
+@media screen and (min-width:600px){
+    
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+    
+
+/* nav bar spacing */ 
+@media screen and (min-width: 320px){ 
+    .navbar .nav-links a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 0px;
+    }
+}
+
+.nav-links {
+    padding: 0px; 
+}
+
+@media screen and (min-width: 600px){ 
+    .navbar .nav-links a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+ 

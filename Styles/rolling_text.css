@@ -1,0 +1,24 @@
+
+ .rolling-text {
+	 display: inline-block;
+	 line-height: 30px;
+	 height: 30px;
+	 text-decoration: none;
+	 overflow: hidden;
+}
+
+ .rolling-text:hover .letter, .rolling-text.play .letter {
+	 transform: translateY(-100%);
+}
+ .rolling-text .letter {
+	 display: inline-block;
+	 transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+ 
+.rolling-text .letter {
+    color: inherit; /* Ensures it takes the color from .rolling-text */
+  }
+  
+  .rolling-text .block {
+    color: inherit;
+  }

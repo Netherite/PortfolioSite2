@@ -1,3 +1,10 @@
+
+
+
+
+
+
+/* sets display to flex 
 *,
 *::after,
 *::before {
@@ -83,6 +90,13 @@ body {
   width: 0;
 }
 
+/* get rid of hamburger menu 
+@media screen and  (min-width: 600px){ 
+    .hamburger-menu {
+      display: none;
+    }
+}
+
 @media screen and  (min-width: 600px){
     .hamburger-menu input {
         display: none; 
@@ -108,7 +122,6 @@ body {
     translate: 0;
   }
 
-
 .nav-container {
     display: flex; 
     justify-content: space-between; 
@@ -128,3 +141,5 @@ body {
 .navbar .contact-btn:hover {
     background-color: #0056b3;
 }
+
+*/

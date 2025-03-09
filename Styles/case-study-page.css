@@ -1,0 +1,26 @@
+body {
+    background-color: var(--background-color);
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+}
+
+section img {
+    width: 100%;
+}
+
+.content-wrapper {
+    background-color: var(--background-color);
+}
+
+.content-wrapper img 
+{
+    margin-top: 20px;
+}
+
+h4 {
+    margin-top: 60px;
+    margin-bottom: 0px;
+}

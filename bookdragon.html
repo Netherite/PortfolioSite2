@@ -4,29 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Dragon</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/case-study-page.css">
+    <link rel="stylesheet" href="Styles/case-study-navigation.css">
+    <link rel="stylesheet" href="Styles/button.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+
 </head>
 <body>
-    <h1>Book Dragon</h1>
-    <h2>Designing a book-lovers community hub</h2>
-    <p>This concept of this app came from the experience of wanting to find book recommendations. This app centers around the use 
-        of AI to tailor custom recommendations for users based on style, genre preference. Users are often given frustrating parameters</p>
-    <h3>Role</h3>
-    <p>Digital Designer</p>
-    <img src="" alt="">
-    <h3>Context</h3>
-    <p>The goal of this app is to provide streamlines, custom tailored shopping experience to users based on their reading preferences. The app updates its recommendations for the user with each subsequent book review, building user recommendations based off of genre, trope, character, and writing style preferences. It would look for key words in reviews and match them to similar reviews.  
-    </p>
-    <h3>Research</h3>
-    <p> With every e-commerce app, the question "how does this app differentiate itself from others on the market?" is a key question to consider. The premiere book app today is goodreads, which is a place for leaving reviews. Early on in the design process
-        With a very intense month ahead, facing a blank canvas is not an option. Making quick decisions on the visual direction is crucial to meeting the deadline, but it could only be based on something other than subjectivity. The team was concerned about the very dark vibe they had on their website. It must resonate with the enterprise market without losing the fun element of gaming. Mood boards and stylescapes are great ways to explore different visual directions; however, gathering references from other websites is the most useful for tight deadlines. We started our research with potential visual directions from top players or aspirational brands in similar verticals, cutting-edge tech, or enterprise-friendly brands.
+    <div class="nav-container">
+        <div class="logo">Logo</div>
+
+        <label class="hamburger-menu">
+            <input type="checkbox">
+        </label>
+
+        <nav class ="menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <button class="pink-button"><a href="#contact">Contact</a></button>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content-wrapper" >
+          <section>
+    
+            <h1>Book Dragon</h1>
+            <h2>Designing a book-lovers community hub</h2>
+            <img src="Assets/book_dragon/Main-photo-book-dragon.png" alt="">
+            <p>Book Dragon is a comprehensive library and e-reader application designed to 
+                provide book recommendations, facilitate discussions, and enhance the reading experience. Unlike existing apps such as Libby, Kindle, or Goodreads, Book Dragon integrates personalized AI-driven recommendations, an in-app reading experience, and interactive forums where readers can engage with others who share their literary interests.
+            </p>
+            <img src="" alt="">
+            <h3>Context</h3>
+            <p>This project was created as a personal endeavor to showcase my UI/UX design skills from research to final implementation. As an avid reader, I sought to develop an app that addresses common pain points in existing library and e-reader applications. My goal was to create a platform that allows users to seamlessly discover, read, review, and discuss books in a single, intuitive interface. Additionally, I wanted to incorporate a feature that mimics real-life library lending by enabling users to share their checked-out titles with friends and family.  
+            </p>
+            <h3>Research</h3>
+            <h4>User research</h4>
+            <p> 
+                Understanding the target demographic was a crucial first step. Based on research, the primary users of Book Dragon are highly educated Americans aged 24 to 60, with a slight majority being female. These users value creativity, transparency, intellect, and community. Their primary goal is to quickly find high-quality book recommendations, organize their reading lists, and engage in meaningful discussions about books they love.
+            </p>
+
+            <h4>
+                Competition Analysis
+            </h4>
+            <img src="/Assets/book_dragon/competition_analysis.png" alt="">
+            <p>To ensure Book Dragon offers unique value, I conducted an analysis of existing book-related apps, including:</p>
+            <ul>
+                <li>Apple Books </li>
+                <li> Goodreads
+                <li> Kindle </li>
+                <li> Libby</li>
+                <li> Barnes & noble nook </li>
+                <li> Bookmory </li>
+                <li> Book buddy Storygraph: reading tracker</li>
+                <li> Fable: Books & TV </li>
+            </ul>
+
+            <p>I examined each app’s user experience, identifying strengths and areas for improvement. Notable gaps included a lack of well-integrated recommendation engines, limited social engagement, and inconsistent book-sharing capabilities
+            </p>
+
+            
+            <h4>Information architecture</h4>
+            <img src="/Assets/book_dragon/site_map.png" alt="">
+            <p>During the wireframing phase, I prioritized user mental models by aligning the design with established digital conventions. This ensures a frictionless experience, reducing cognitive load and improving usability. I also allocated space for search analytics, which can later be leveraged for refining the recommendation algorithm and improving search functionality
+            </p>
+            
+
         
-        We organize these references as a collection of bookmarks on an inspiration board or inspo board for short. The bookmarks are presented as cards with elements that will help summarize their visual direction. The elements are their logo, color palette, and adjectives about the website experience..
-    </p>
-    <h3>design</h3>
-    <p>It felt off to completely escape the dark theme, but we can't overuse it. The new brand guidelines developed by the team were almost ready, and we got a sneak peek at them. Shout out to Mathew Kerber, the lead designer behind the brand refresh.
 
-        They used dark looks for key visuals like slides, covers, and social media but transitioned to a clear and light look for the body of content pieces. The primary graphical element outlined in the guidelines used the logo mark in oversized placements cropped into the edgers and high-contrast typography for clean compositions. A marvelous execution.</p>
+            <h3>Design</h3>
 
+            <h4>Branding</h4>
+            <p>BookDragons mission is simple: to provide a broad scope of literary works for all people, and to nurture a community of like-minded book lovers. BookDragon champions intellectual curiosity, academic freedom, and inclusivity. 
+                As such, I wanted the branding to reflect this committment to openness and imagination. 
+            </p>
+            <img src="/Assets/book_dragon/book_dragon_colors.png" alt="">
+
+
+            <h4>Prototyping</h4>
+            <p>Book Dragon was designed with a range of features to enhance the reading experience. It provides access to a vast library of both public and private book collections, along with AI-driven recommendations tailored to individual reading habits. A built-in e-reader offers customization options such as adjustable fonts, font sizes, and dark mode for a personalized reading experience. Readers can seamlessly sync bookmarks, reading progress, and highlights across devices, as well as send books to Kindle or third-party reading apps. A reading tracker offers insights into reading habits, genres, and trends, while discussion forums foster community engagement and book reviews. Additionally, a lending feature allows users to share checked-out library books with others, making Book Dragon a comprehensive platform for book lovers. </p>
+
+            <img src="/Assets/book_dragon/logo.png" alt="">
+            <p>Because book readers and writers alike both value imagination and creativity, I decided to use an illustrative approach for this app design. I chose the color purple for it’s association with the fantasy genre, and because it is not a commonly used color amongst book apps. Books are also a highly physical medium, and though in general digital design has moved away from skeuomorphism, I decided to use a skeuomorphic approach for this project since according to pew research, 68& of book responders said that like the physicality of a real book. 
+            </p>
+
+            <img src="/Assets/book_dragon/staggered.png" alt="">
+            <img src="/Assets/book_dragon/side-by-side.png" alt="">
+            <img src="/Assets/book_dragon/app_icon.png" alt="">
+            
+            
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="vert-flex-item">
+                <h2>Let's work together</h2>
+                <a href="mailto:sheridanlugo@gmail.com" class="large-link">sheridanlugo@gmail.com</a>
+            </div>
+            <div class="vert-flex-item">
+                <div class="links">
+                    <a href="linkedin" class="large-link">linkedin</a>
+                    <a href="Behance" class="large-link">Behance</a>
+                    <a href="instagram" class="large-link">instagram</a>
+                </div>
+                <p> &copy; 2025 sheridanlugo.com</p> 
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

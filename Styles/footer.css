@@ -1,0 +1,84 @@
+
+/********* Footer **********/ 
+
+/* To make a sticky footer work, there are two required steps: first, there must be a parent 
+container set to position relative so that the footer can work with any layout, across 
+multiple webpages. Second, there must be a child element inside of the footer with a position 
+of fixed. This fixed footer will allow for the 'sticky' effect we are looking for. This 
+fixed position child must take up 100% of the width and height of the parent, and will 
+also contain all of the content and stylistic elements. Finally, to hide this child element, 
+you must use a polygon clip path to hide the footer until it appears on the page. */
+
+footer {
+    background-color: var(--pink);
+    padding: var(--padding-small); 
+    position: sticky; 
+    bottom: 0; 
+    z-index: -10;
+
+}
+
+@media screen and (min-width: 700px){
+    footer{
+        height: 500px; 
+        padding-top: 80px; 
+    } 
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: auto; 
+    color: white; 
+    height: 100%; 
+}
+
+.footer-wrapper a {
+    color: white; 
+}
+
+@media screen and (min-width: 700px){
+    footer {
+        padding: var(--padding-large); 
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        justify-content: space-between;
+    } 
+    
+    .vert-flex-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vert-flex-item h2{
+      font-size: 7rem;
+    }
+
+    .vert-flex-item:first-child {
+        width: 60%;
+    }
+
+    .vert-flex-item:first-child a{
+        margin-top: 20px; 
+        font-size: 3rem; 
+    }
+
+    .vert-flex-item:nth-child(2) {
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+
+
